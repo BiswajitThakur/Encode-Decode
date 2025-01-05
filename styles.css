@@ -1,11 +1,11 @@
 body {
   background-color: #151515;
-  color: #ffffff;
+  color: #a0a0a0;
 }
 
 .txt {
   margin: auto;
-  height: 150px;
+  height: 35vh;
   width: 95vw;
   background-color: #000000;
   color: #fff;
@@ -44,13 +44,12 @@ body {
 .opc {
   margin-left: auto;
   margin-right: auto;
-  width: 50vw;
+  width: 30vw;
   font-size: 16px;
   padding: 5px 10px;
   text-align: center;
-  color: #fff;
-  background-color: #008cba;
-  border: 2px solid #008cba;
+  color: #a0a0a0;
+  background-color: #252540;
   font-weight: bold;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -59,15 +58,15 @@ body {
 .subm {
   margin-left: auto;
   margin-right: auto;
-  color: #fff;
-  width: 50vw;
+  color: #a0a0a0;
+  width: 20vw;
   cursor: pointer;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   padding: 10px 25px;
-  background-color: #4caf50;
-  border: 2px solid #4caf50;
+  background-color: #255025;
+  border: 2px solid #255025;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -103,5 +102,5 @@ body {
   color: #000;
 }
 .h_2 {
-  text-shadow: -4px 4px 4px #505050;
+  text-shadow: -4px 4px 4px #a0a0a0;
 }

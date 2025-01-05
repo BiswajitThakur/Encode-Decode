@@ -31,32 +31,15 @@ lst.push({
   name: "Unicode Encode",
   function: function (theString) {
     let unicodeString = "";
-    const t = window.confirm(
-      "Do you want to replace all the text to unicode ?"
-    );
-    if (t) {
-      for (let i = 0; i < theString.length; i++) {
-        let theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
-        while (theUnicode.length < 4) {
-          theUnicode = "0" + theUnicode;
-        }
-        theUnicode = "\\u" + theUnicode;
-        unicodeString += theUnicode;
+    for (let i = 0; i < theString.length; i++) {
+      let theUnicode = theString.charCodeAt(i).toString(16).toUpperCase();
+      while (theUnicode.length < 4) {
+        theUnicode = "0" + theUnicode;
       }
-    } else {
-      unicodeString = theString.replace(/[^\x00-\x7F]/g, (w) => {
-        let unicodeString1 = "";
-        for (let i = 0; i < w.length; i++) {
-          let theUnicode1 = w.charCodeAt(i).toString(16).toUpperCase();
-          while (theUnicode1.length < 4) {
-            theUnicode1 = "0" + theUnicode1;
-          }
-          theUnicode1 = "\\u" + theUnicode1;
-          unicodeString1 += theUnicode1;
-        }
-        return unicodeString1;
-      });
+      theUnicode = "\\u" + theUnicode;
+      unicodeString += theUnicode;
     }
+
     return unicodeString;
   },
 });
@@ -69,9 +52,3 @@ lst.push({
     });
   },
 });
-
-/*
-lst.push({
-    "name" : ""
-});
-*/
