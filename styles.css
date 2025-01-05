@@ -55,6 +55,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
 .subm {
   margin-left: auto;
   margin-right: auto;
@@ -103,4 +104,12 @@ body {
 }
 .h_2 {
   text-shadow: -4px 4px 4px #a0a0a0;
+}
+@media only screen and (max-width: 600px) {
+  .opc {
+    width: 45vw;
+  }
+  .subm {
+    width: 45vw;
+  }
 }
